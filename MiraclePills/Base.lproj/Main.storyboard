@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="Kjk-QI-OZ3">
@@ -24,16 +24,63 @@
                                     <constraint firstAttribute="width" constant="105" id="ak4-Ov-FYd"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np6-jh-Ypf">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQi-5Q-vHN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4dM-n2-WQc"/>
+                                    <constraint firstAttribute="width" constant="39" id="5pq-9d-4OT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YS8-So-AqQ" userLabel="Divider">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ax1-Dz-H90"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wap-bw-6B2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CJ8-vG-8U1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7N-Sa-s7l">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wap-bw-6B2" firstAttribute="leading" secondItem="p7N-Sa-s7l" secondAttribute="leading" id="5fO-LG-weo"/>
+                            <constraint firstItem="p7N-Sa-s7l" firstAttribute="top" secondItem="YS8-So-AqQ" secondAttribute="bottom" constant="20" id="8fC-Up-Z1A"/>
+                            <constraint firstItem="YS8-So-AqQ" firstAttribute="top" secondItem="SQi-5Q-vHN" secondAttribute="bottom" constant="20" id="9c8-el-qiM"/>
+                            <constraint firstItem="p7N-Sa-s7l" firstAttribute="trailing" secondItem="YS8-So-AqQ" secondAttribute="trailing" id="E92-CL-Etb"/>
+                            <constraint firstAttribute="trailing" secondItem="YS8-So-AqQ" secondAttribute="trailing" constant="20" id="H6q-xi-iJy"/>
+                            <constraint firstItem="SQi-5Q-vHN" firstAttribute="centerX" secondItem="Kjk-QI-OZ3" secondAttribute="centerX" id="IWY-SS-6AN"/>
+                            <constraint firstItem="YS8-So-AqQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Jfc-jU-877"/>
+                            <constraint firstItem="Np6-jh-Ypf" firstAttribute="centerX" secondItem="Kjk-QI-OZ3" secondAttribute="centerX" id="Ytu-G0-S6R"/>
+                            <constraint firstItem="Np6-jh-Ypf" firstAttribute="top" secondItem="Kjk-QI-OZ3" secondAttribute="bottom" constant="25" id="dct-Ou-rdt"/>
+                            <constraint firstItem="YS8-So-AqQ" firstAttribute="centerX" secondItem="Kjk-QI-OZ3" secondAttribute="centerX" id="gft-H2-3ym"/>
                             <constraint firstItem="Kjk-QI-OZ3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="hjo-MG-4Bb"/>
+                            <constraint firstItem="Wap-bw-6B2" firstAttribute="top" secondItem="p7N-Sa-s7l" secondAttribute="bottom" constant="8" id="n1v-J7-jBK"/>
                             <constraint firstItem="Kjk-QI-OZ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o0I-0G-hJ2"/>
+                            <constraint firstItem="p7N-Sa-s7l" firstAttribute="leading" secondItem="YS8-So-AqQ" secondAttribute="leading" id="v9d-Ey-wDM"/>
+                            <constraint firstItem="SQi-5Q-vHN" firstAttribute="top" secondItem="Np6-jh-Ypf" secondAttribute="bottom" constant="8" id="wUF-Lk-nHd"/>
+                            <constraint firstItem="Wap-bw-6B2" firstAttribute="trailing" secondItem="p7N-Sa-s7l" secondAttribute="trailing" id="z2m-Am-xph"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
     <resources>
