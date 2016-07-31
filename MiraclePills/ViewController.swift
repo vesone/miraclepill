@@ -8,10 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    @IBOutlet weak var statePicker: UIPickerView!
+    @IBOutlet weak var statePickerBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        statePicker.dataSource = self
+        statePicker.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -19,6 +24,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func stateBtnPressed(_ sender: AnyObject) {
+        
+    }
 
 }
 
